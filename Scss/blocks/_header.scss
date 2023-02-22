@@ -41,18 +41,43 @@ only screen and (                min-resolution: 2dppx) {
     border-radius: 10px;
 }
 
-.head{
-    width: fit-content;
-    padding: 100px 60px;
-    padding-bottom: 130px;
-    color: white;
+    .head{
+        width: fit-content;
+        padding: 100px 60px;
+        padding-bottom: 130px;
+        color: white;
 
-    &__title{
-        font-family: fraunces;
-    }
+        &__title{
+            font-family: fraunces;
+        }
 
-    &__description{
-        line-height: 24px;
+        &__description{
+            line-height: 24px;
+        }
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+
+    header{
+        background: url(../../img/Bitmap_main.jpg) no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px;
+    }
+    
+        .head{
+            width: fit-content;
+            padding: 100px 60px;
+            padding-bottom: 130px;
+            color: white;
+    
+            &__title{
+                font-family: fraunces;
+            }
+    
+            &__description{
+                line-height: 24px;
+            }
+        }
 }

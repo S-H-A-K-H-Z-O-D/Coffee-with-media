@@ -50,43 +50,89 @@ only screen and (                min-resolution: 2dppx) {
 } 
 
 
-@media only screen and (min-width: 481px) and (max-width: 1000px) {
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
 
     .section2{
-        background-color: #2C343E;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        position: relative;
-        margin-top: 280px;
-        border-radius: 10px;
     
         &::before{
-            content: "";
-            position: absolute;
             top: -120px;
             left: calc(50% - 530px/2 + 0.5px);
             width: 530px;
             height: 280px;
-            background: url(/img/Bitmap.jpg) no-repeat;
-            background-size: 100% 100%;
-            border-radius: 10px;
         }
     
         &__content{
-
             width: fit-content;
-            color: white;
             margin: 200px 50px;
             margin-bottom: 35px;
             padding: 0 50px;
     
             &__title{
-                font-family: fraunces;
+                font-size: 25px;
             }
     
             &__description{
-                line-height: 24px;
+                line-height: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 649px) {
+
+    .section2{
+    
+        &::before{
+            top: -120px;
+            left: calc(50% - 430px/2 + 0.5px);
+            width: 430px;
+            height: 230px;
+        }
+    
+        &__content{
+            width: fit-content;
+            margin: 150px 50px;
+            margin-bottom: 35px;
+            padding: 0 50px;
+    
+            &__title{
+                font-size: 25px;
+            }
+    
+            &__description{
+                line-height: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .section2{
+    
+        &::before{
+            top: -120px;
+            left: calc(50% - 330px/2 + 0.5px);
+            width: 330px;
+            height: 180px;
+        }
+    
+        &__content{
+            width: fit-content;
+            margin: 100px 50px;
+            margin-bottom: 35px;
+            padding: 0 50px;
+    
+            &__title{
+                font-size: 25px;
+            }
+    
+            &__description{
+                line-height: 20px;
+                font-size: 12px;
             }
         }
     }
