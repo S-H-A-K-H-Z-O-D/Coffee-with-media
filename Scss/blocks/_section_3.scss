@@ -1,0 +1,84 @@
+.section3{
+    margin-top: 100px;
+    margin-left: 70px;
+
+    &__title{
+        color:#83888F;
+        font-family: fraunces;
+        margin-bottom: 50px;
+    }
+
+    &__cards{
+        display: flex;
+
+        &__card{
+            margin-top: 30px;
+            padding-top: 60px;
+            margin-right: 150px;
+
+            &__title{
+                color: #333D4B;
+                font-family: fraunces;
+            }
+
+            &__list{
+                list-style: none;
+                padding-left: 0;
+                line-height: 25px;
+                color: #333D4B;
+            }
+        }
+
+        &__map1{
+            position: relative;
+
+            &::before{
+                @include mapArgument();
+                background: url(../img/UK-map.png) no-repeat;
+            }
+        }
+
+        &__map2{
+            position: relative;
+
+            &::before{
+                @include mapArgument();
+                background: url(/img/Canada-map.png);
+            }
+        }
+
+        &__map3{
+            position: relative;
+
+            &::before{
+                @include mapArgument();
+                background: url(/img/Australia-map.png);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1000px){
+
+    .section3{
+        margin-top: 100px;
+        margin-left: 0px;
+    
+        &__title{
+            color:#83888F;
+            font-family: fraunces;
+            margin-bottom: 50px;
+        }
+    
+        &__cards{
+            display: flex;
+    
+            &__card{
+                margin-top: 30px;
+                padding-top: 60px;
+                margin-right: 50px;
+    
+            }
+        }
+    }
+}

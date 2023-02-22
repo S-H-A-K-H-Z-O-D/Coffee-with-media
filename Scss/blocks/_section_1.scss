@@ -1,0 +1,108 @@
+.section1{
+    position: relative;
+    padding: 0 100px;
+    height: 80vh;
+    margin: 100px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: 100px;
+        width: 370px;
+        height: 450px;
+        background: url(../img/section2-pic.jpg) no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px;
+    }
+
+    &__content{
+        width: 46%;
+        color: #333D4B;
+
+        &__title{
+            font-family: fraunces;
+        }
+
+        &__description{
+            line-height: 24px;
+        }
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .section1{
+    &::before{
+        background: url(../../img/section2-pic@2.png);
+    }
+  }
+} 
+
+
+@media only screen and (min-width: 650px) and (max-width: 1200px){
+
+    .section1{
+        padding: 0 0;
+        margin: 100px 0;
+        
+        &::before{
+            content: "";
+            left: 0;
+            width: 270px;
+            height: 420px;
+        }
+    
+        &__content{
+    
+            &__title{
+                font-size: 25px;
+            }
+    
+            &__description{
+                line-height: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 649px){
+
+    .section1{
+        padding: 0 0;
+        margin: 0px 0;
+        margin-top: 95vh;
+        justify-content: center;        
+    
+        &::before{ 
+            top: -450px;
+            left: calc(50% - 370px/2 + 0.5px);
+            width: 370px;
+            height: 450px;
+        }
+    
+        &__content{
+            height: 250px;
+            min-width: 64%;            
+    
+            &__title{
+                font-size: 25px;
+            }
+    
+            &__description{
+                line-height: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.section2{
+    background-color: #2C343E;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 180px;
+    border-radius: 10px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: 60px;
+        width: 370px;
+        height: 400px;
+        background: url(../img/section3-pic.jpg) no-repeat;
+        background-size: 100% 100%;
+        border-radius: 10px;
+    }
+
+    &__content{
+        width: 43%;
+        color: white;
+        margin: 70px 50px;
+        margin-bottom: 125px;
+
+        &__title{
+            font-family: fraunces;
+        }
+
+        &__description{
+            line-height: 24px;
+        }
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .section2{
+    &::before{
+        background: url(../../img/section3-pic@2.png);
+    }
+  }
+} 
+
+
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+
+    .section2{
+        background-color: #2C343E;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        margin-top: 280px;
+        border-radius: 10px;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            top: -120px;
+            left: calc(50% - 530px/2 + 0.5px);
+            width: 530px;
+            height: 280px;
+            background: url(/img/Bitmap.jpg) no-repeat;
+            background-size: 100% 100%;
+            border-radius: 10px;
+        }
+    
+        &__content{
+
+            width: fit-content;
+            color: white;
+            margin: 200px 50px;
+            margin-bottom: 35px;
+            padding: 0 50px;
+    
+            &__title{
+                font-family: fraunces;
+            }
+    
+            &__description{
+                line-height: 24px;
+            }
+        }
+    }
+}
